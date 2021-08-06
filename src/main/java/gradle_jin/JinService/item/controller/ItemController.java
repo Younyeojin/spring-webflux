@@ -15,8 +15,8 @@ import reactor.core.publisher.Mono;
 
 @RestController @RequiredArgsConstructor
 public class ItemController {
-    private ItemRepository itemRepository;
-    private CartRepository cartRepository;
+    private final ItemRepository itemRepository;
+    private final CartRepository cartRepository;
 
     @GetMapping
     Mono<?> home(){
